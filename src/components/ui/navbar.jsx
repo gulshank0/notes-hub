@@ -1,0 +1,23 @@
+export function Navbar() {
+  return (
+    <nav className="bg-black p-4 sticky top-0 z-50  ">
+      <div className="container mx-auto flex justify-between items-center">
+        <div className="text-white text-3xl font-bold ">Logo</div>
+        <ul className="flex space-x-6">
+          <li>
+            <a href="#" className="text-white text-2xl hover:text-gray-300">Home</a>
+          </li>
+          <li>
+            <a href="#" className="text-white text-2xl hover:text-gray-300">About Us</a>
+          </li>
+          <li>
+            <a href="#" className="text-white text-2xl hover:text-gray-300">Contact Us</a>
+          </li>
+          <li>
+            <a href="#" className="text-white text-2xl hover:text-gray-300">Feedback</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  )
+}
