@@ -1,5 +1,5 @@
 import './App.css'
-import { LandingPage as LandingPage } from './components/ui/LandingPage.jsx'
+import { LandingPage } from './components/ui/LandingPage.jsx'
 import { Navbar } from './components/ui/navbar.jsx'
 
 function App() {
@@ -7,6 +7,7 @@ function App() {
     <>
       <Navbar />
     <LandingPage />
+  
     </>
   )
 }
