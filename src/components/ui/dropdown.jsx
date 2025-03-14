@@ -5,13 +5,16 @@ export function Dropdown(props) {
 
   return (
     <div>
-      <div>
+      <div className="mt-4 space-y-2 w-full max-w-md " >
         <select
           id="userType"
           value={userType}
           onChange={(e) => setUserType(e.target.value)}
-          className="appearance-none relative block w-full px-3 py-2 border border-gray-300 dark:border-gray-600 placeholder-gray-500 dark:placeholder-gray-400 text-gray-900 dark:text-white rounded-lg focus:outline-none focus:ring-primary focus:border-primary focus:z-10 sm:text-sm bg-transparent"
+          className="p-3  appearance-none relative block w-full  px-40  border rounded-md select-all border-gray-300 bg-transparent"
         >
+          <option className="bg-black text-white " value="select branch">
+            {props.branchZero}
+          </option>
           <option className="bg-black text-white" value="InformationTechnology">
             {props.branchFirst}{" "}
           </option>
