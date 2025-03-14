@@ -1,7 +1,6 @@
-import { Dropdown } from "../ui/dropdown";
+import { Dropdown } from "./Dropdown";
 
-import BranchIT from "../../pages/branch_it";
-import { Navbar } from "./navbar";
+import { Navbar } from "./Navbar";
 export function LandingPage() {
   return (
     <>
@@ -25,7 +24,7 @@ export function LandingPage() {
           branchThird="3rd Semester"
           branchFourth="4th Semester"
         />
-<button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Get Started</button>
+<button className="bg-slate-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded mt-4">Get Started</button>
 
       </div>
     </>
