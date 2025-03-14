@@ -10,7 +10,7 @@ export function Dropdown(props) {
           id="userType"
           value={userType}
           onChange={(e) => setUserType(e.target.value)}
-          className="p-3  appearance-none relative block w-full  px-40  border rounded-md select-all border-gray-300 bg-transparent"
+          className="p-3  appearance-none relative block w-full  px-40  border rounded-md select-all border-gray-300 bg-transparent "
         >
           <option className="bg-black text-white " value="select branch">
             {props.branchZero}
