@@ -1,7 +1,9 @@
 import { Dropdown } from "./Dropdown";
-
+import {useNavigate} from "react-router-dom"
 import { Navbar } from "./Navbar";
 export function LandingPage() {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="flex flex-col items-center justify-center min-h-screen bg-black text-white ">
@@ -24,7 +26,9 @@ export function LandingPage() {
           branchThird="3rd Semester"
           branchFourth="4th Semester"
         />
-<button className="bg-slate-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded mt-4">Get Started</button>
+<button className="bg-slate-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded mt-4"
+onClick={()=> navigate("/Nav")}
+>Get Started</button>
 
       </div>
     </>
