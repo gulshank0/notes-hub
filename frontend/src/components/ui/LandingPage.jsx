@@ -1,9 +1,9 @@
+import React from "react";
+import {BrowserRouter, Route, Routes, useNavigate} from "react-router-dom";
 import { Dropdown } from "./Dropdown";
-import {useNavigate} from "react-router-dom"
 import { Navbar } from "./Navbar";
+import BranchIT from "../../pages/Branch_it";
 export function LandingPage() {
-  const navigate = useNavigate();
-
   return (
     <>
       <div className="flex flex-col items-center justify-center min-h-screen bg-black text-white ">
@@ -26,11 +26,45 @@ export function LandingPage() {
           branchThird="3rd Semester"
           branchFourth="4th Semester"
         />
-<button className="bg-slate-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded mt-4"
-onClick={()=> navigate("/Nav")}
->Get Started</button>
+<div>
+
+
+
+
+        <BrowserRouter> 
+
+        <AppBar />
+
+        <Routes>
+<Route path="/branchIT" element={<BranchIT/>}/>
+
+
+        </Routes>
+        
+        
+        </BrowserRouter>
+
+</div>
 
       </div>
     </>
   );
+}
+
+
+
+function AppBar(){
+  const navigate =useNavigate();
+  return <div>
+
+<button className="bg-slate-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded mt-4"
+onClick={()=>{
+window.location.href="/BranchIT"
+}}
+>Get Started</button>
+
+
+
+
+  </div>
 }

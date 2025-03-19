@@ -5,16 +5,13 @@ export function Navbar() {
         <div className="text-white text-3xl font-bold hover:cursor-pointer " onClick={() => window.location.reload()} >Logo</div>
         <ul className="flex space-x-6">
           <li>
-            <a href="#" className="text-white text-2xl hover:text-gray-300">Home</a>
+            <a href="#" className="text-white text-2xl hover:text-gray-300" onClick={()=>{window.location.href=("/")}} >Home</a>
           </li>
           <li>
             <a href="#" className="text-white text-2xl hover:text-gray-300">About Us</a>
           </li>
           <li>
             <a href="#" className="text-white text-2xl hover:text-gray-300">Contact Us</a>
-          </li>
-          <li>
-            <a href="#" className="text-white text-2xl hover:text-gray-300">Feedback</a>
           </li>
         </ul>
       </div>
