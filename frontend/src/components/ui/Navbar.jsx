@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export function Navbar() {
   return (
     <nav className="bg-black p-4 sticky  top-0 z-50 ">
@@ -5,13 +7,13 @@ export function Navbar() {
         <div className="text-white text-3xl font-bold hover:cursor-pointer " onClick={() => window.location.reload()} >Logo</div>
         <ul className="flex space-x-6">
           <li>
-            <a href="#" className="text-white text-2xl hover:text-gray-300" onClick={()=>{window.location.href=("/")}} >Home</a>
+            <Link href="#" className="text-white text-2xl hover:text-gray-300" to="/" >Home</Link>
           </li>
           <li>
-            <a href="#" className="text-white text-2xl hover:text-gray-300">About Us</a>
+            <Link href="#" className="text-white text-2xl hover:text-gray-300" to="/about" >About Us</Link>
           </li>
           <li>
-            <a href="#" className="text-white text-2xl hover:text-gray-300">Contact Us</a>
+            <Link href="#" className="text-white text-2xl hover:text-gray-300" to="/contact" >Contact Us</Link>
           </li>
         </ul>
       </div>

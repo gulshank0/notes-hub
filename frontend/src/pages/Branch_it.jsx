@@ -1,24 +1,8 @@
-import { Card } from "../components/ui/Card";
-import { Navbar } from "../components/ui/Navbar";
-
 function BranchIT() {
 return (
   <div>
     
-<div>
-  <Navbar/>
-
-  <h1 className="text-3xl font-bold mb-4">Information Technology</h1>
-  <p className="text-lg mb-4">Welcome to the Information Technology branch!</p>
-
-
-</div>
-
-<div>
-
-<Card title="DSA"  />
-
-</div>
+hi there
 
   </div>
 );
