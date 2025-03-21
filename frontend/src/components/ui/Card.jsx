@@ -1,9 +1,8 @@
-import { div } from "three/tsl";
 
 export function Card(props) {
   return (
-  <div>
-    hi there 
+  <div className="bg-red-600 rounded-2xl px-5 py-6 " >
+    <h1>{props.title}</h1> 
   </div>
   
   
