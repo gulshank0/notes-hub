@@ -1,7 +1,7 @@
 import "./App.css";
 import { LandingPage } from "./pages/LandingPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Navbar } from "./components/ui/Navbar.jsx";
+import Contents from "./components/ui/Contents.jsx";
 import BranchIT from "./pages/Branch_it.jsx";
 
 function App() {
@@ -9,7 +9,9 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/branchIT" element={<BranchIT/>} />
+        <Route path="/branchIT" element={<BranchIT />} />
+
+        <Route path="/contents" element={<Contents />} />
       </Routes>
     </Router>
   );
