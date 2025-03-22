@@ -5,7 +5,7 @@ import { Navbar } from "../components/ui/Navbar";
 export function LandingPage() {
   return (
     <>
-  
+  <Navbar/>
       <div className="flex flex-col items-center justify-center min-h-screen bg-black text-white ">
         <p className="text-5xl  text-gradient-to-r from-blue-500 to-purple-500">
           Welcome to my website!
