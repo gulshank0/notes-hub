@@ -2,15 +2,17 @@ import { Card } from "../components/ui/Card";
 
 function BranchIT() {
 return (
-  <div >
+  <div className="bg-black h-screen sm:h-screen text-white flex justify-center items-center" >
     
-<div className="bg-black h-screen text-3xl text-white  grid grid-cols-3 gap-4 " >
+<div className="grid grid-cols-3 gap-8" >
 <Card title="DSA" />
 <Card title="OOPS"/>
 
 <Card title="JAVA"/>
 <Card title="CPP"/>
-<Card title="Javascript"/>
+<Card title="Web Devs" onclick={()=>{
+
+}} />
 <Card title="computer Netwoks"/>
 </div>
 

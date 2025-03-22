@@ -7,6 +7,7 @@ import BranchIT from "./pages/Branch_it.jsx";
 function App() {
   return (
     <Router>
+      <Navbar/>
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/branchIT" element={<BranchIT/>} />
