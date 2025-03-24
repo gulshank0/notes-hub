@@ -1,6 +1,6 @@
 import React from "react";
 
-function BranchCSE() {
+function BranchEEE() {
   return (
     <div>
       <div className="bg-red-300">hi there </div>
@@ -8,4 +8,4 @@ function BranchCSE() {
   );
 }
 
-export default BranchCSE;
+export default BranchEEE();

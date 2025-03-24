@@ -5,7 +5,7 @@ export function Dropdown(props) {
 
   return (
     <div>
-      <div className="mt-4 space-y-2 w-full max-w-md " >
+      <div className="mt-4 space-y-2 w-full max-w-md ">
         <select
           id="userType"
           value={userType}
@@ -29,6 +29,15 @@ export function Dropdown(props) {
           </option>
           <option className="bg-black text-white" value="Mechanical">
             {props.branchFourth}
+          </option>
+          <option className="bg-black text-white" value="Mechanical">
+            {props.branchFifth}
+          </option>
+          <option className="bg-black text-white" value="Mechanical">
+            {props.branchSixth}
+          </option>
+          <option className="bg-black text-white" value="Mechanical">
+            {props.branchSeventh}
           </option>
         </select>
       </div>

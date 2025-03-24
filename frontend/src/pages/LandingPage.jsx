@@ -13,10 +13,13 @@ export function LandingPage() {
 
         <Dropdown
           branchZero="Select Branch"
-          branchFirst="Information Technology"
-          branchSecond="Computer Science"
-          branchThird="Electronics and Communication"
-          branchFourth="Mechanical"
+          branchFirst="CSE"
+          branchSecond="IT"
+          branchSeventh="CST"
+          branchThird="EEE"
+          branchFourth="ECE"
+          branchFifth="MAE"
+          branchSixth="ME"
         />
 
         <Dropdown
@@ -25,11 +28,14 @@ export function LandingPage() {
           branchSecond="2nd Semester"
           branchThird="3rd Semester"
           branchFourth="4th Semester"
+          branchFifth="5th Semester"
+          branchSixth="6th Semester"
+          branchSeventh="7th Semester"
         />
 
         <Link
           to="/branchIT"
-          className=" bg-blue-500 px-5 py-3 rounded-2xl pt-2 mt-3 "
+          className=" bg-gradient-to-br from-blue-500 to-purple-500 px-9 py-4 rounded-2xl mt-4  hover:bg-transparent cursor-pointer transition delay-150 duration-100 ease-in-out hover:translate-y-1 hover:scale-110 "
         >
           Get Started
         </Link>
