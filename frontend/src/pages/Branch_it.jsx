@@ -12,7 +12,7 @@ function BranchIT() {
 
           <Card title="JAVA" />
           <Card title="CPP" />
-          <Card title="Web Devs" Link="/contents" />
+          <Card title="Web Devs" link="http://google.com" />
           <Card title="computer Netwoks" />
         </div>
       </div>
