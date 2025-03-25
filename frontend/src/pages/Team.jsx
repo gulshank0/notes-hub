@@ -7,7 +7,7 @@ function TeamPage() {
       <Navbar />
       <div className="min-h-screen bg-black ">
         <div className="pt-30 flex justify-center">
-          <div className=" bg-gradient-to-br from-blue-500 to-purple-500 rounded-4xl py-30 px-30 flex flex-col hover:bg-transparent transition delay-150 duration-100 ease-in-out hover:translate-y-1 hover:scale-110 ">
+          <div className=" bg-gradient-to-br from-blue-500 to-red-500 rounded-4xl py-30 px-30 flex flex-col hover:bg-transparent transition delay-150 duration-100 ease-in-out hover:translate-y-1 hover:scale-110 ">
             <div className=" rounded-full flex justify-center pb-5 ">
               <img
                 src="../../public/CuteCat.png"
