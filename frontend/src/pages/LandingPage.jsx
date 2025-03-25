@@ -7,13 +7,11 @@ export function LandingPage() {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col items-center justify-center min-h-screen bg-black text-white ">
-        <p className="text-5xl">
-          Welcome to my Notes Hub!
-        </p>
+      <div className="flex flex-col items-center justify-center min-h-screen bg-black text-white pt-50 ">
+        <p className="text-5xl">Welcome to Notes Hub!</p>
 
         <Dropdown
-          branchZero="Select  Branch"
+          branchZero="Select     Branch"
           branchFirst="CSE"
           branchSecond="IT"
           branchSeventh="CST"
@@ -41,8 +39,7 @@ export function LandingPage() {
           Get Started
         </Link>
 
-
-        <Footer/>
+        <Footer />
       </div>
     </>
   );

@@ -15,12 +15,12 @@ export const Footer = () => {
             Twitter
           </a>
           <a
-            href="https://facebook.com"
+            href="https://Instagram.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-xl text-gray-400 hover:text-blue-500 transition duration-200"
           >
-            Facebook
+           Instagram 
           </a>
           <a
             href="https://github.com"
