@@ -7,17 +7,17 @@ function Contents(subjects) {
     <div>
       <Navbar />
 
-      <div className="h-screen flex flex-col items-center bg-black underline pt-40 ">
+      <div className="h-screen flex flex-col items-center bg-black pt-40 ">
         <p className="text-4xl text-white pb-6 ">Welcome to WEB DEV PAGE </p>
-        <div className="text-3xl text-pretty text-white bg-red-600 flex space-x-10 px-25 p-10 rounded-2xl ">
-          <Link> Syllabus</Link>
-          <Link> Notes </Link>
-          <Link> PYQ'S</Link>
-          <Link> Lab</Link>
-          <Link> Books </Link>
-          <Link> Akash</Link>
+        <div className="text-3xl text-pretty text-white bg-gradient-to-br from-violet-500 to-red-400 flex gap-10  px-25 p-10 rounded-2xl ">
+          <Link className="hover:underline"> Syllabus</Link>
+          <Link className="hover:underline"> Notes </Link>
+          <Link className="hover:underline"> PYQ'S</Link>
+          <Link className="hover:underline"> Lab</Link>
+          <Link className="hover:underline"> Books </Link>
+          <Link className="hover:underline"> Akash</Link>
 
-          <Link> Videos</Link>
+          <Link className="hover:underline"> Videos</Link>
         </div>
       </div>
     </div>
