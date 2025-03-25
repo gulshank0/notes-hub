@@ -7,7 +7,7 @@ export function LandingPage() {
     <>
       <Navbar />
       <div className="flex flex-col items-center justify-center min-h-screen bg-black text-white ">
-        <p className="text-5xl  text-gradient-to-r from-blue-500 to-purple-500">
+        <p className="text-5xl">
           Welcome to my Notes Hub!
         </p>
 

@@ -1,19 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Navbar } from "./Navbar";
 
-function Contents() {
+function Contents(subjects) {
   return (
     <div>
-      whi ther
-      <div className="bg-black">
-        <Link> Syllabus</Link>
-        <Link> Notes </Link>
-        <Link> PYQ'S</Link>
-        <Link> Lab</Link>
-        <Link> Books </Link>
-        <Link> Akash</Link>
+      <Navbar />
 
-        <Link> Videos</Link>
+      <div className="h-screen flex flex-col justify-center items-center bg-black underline ">
+        <p className="text-4xl text-white" >Welcome to WEB DEV PAGE </p>
+        <div className="text-2xl text-white bg-red-600 flex space-x-10 px-25 p-10 rounded-2xl ">
+          <Link> Syllabus</Link>
+          <Link> Notes </Link>
+          <Link> PYQ'S</Link>
+          <Link> Lab</Link>
+          <Link> Books </Link>
+          <Link> Akash</Link>
+
+          <Link> Videos</Link>
+        </div>
       </div>
     </div>
   );
