@@ -5,8 +5,8 @@ function BranchIT() {
   return (
     <>
       <Navbar />
-      <div className="bg-black h-screen sm:h-screen text-white flex justify-center items-center">
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-3 ">
+      <div className="bg-black sm:h-screen text-white flex justify-center items-center">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 ">
           <Card title="DSA" />
           <Card title="OOPS" />
 

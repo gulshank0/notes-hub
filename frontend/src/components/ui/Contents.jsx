@@ -25,16 +25,30 @@ function Contents(subjects) {
 
       <div className="h-screen flex flex-col items-center bg-black pt-40 ">
         <p className="text-4xl text-white pb-6 ">Welcome to WEB DEV PAGE </p>
-        <div className="text-3xl text-pretty text-white bg-gradient-to-br from-violet-500 to-red-400 flex gap-10  px-25 p-10 rounded-2xl ">
-          <Link className="hover:underline"> Syllabus</Link>
+        <div className="text-3xl text-pretty text-white bg-gradient-to-br from-red-400 to-violet-700 px-20 p-6 rounded-2xl grid grid-cols-3 sm:grid-cols-7 gap-10 ">
+          <Link className="hover:underline bg-gradient-to-bl from-violet-800 to-violet-400 rounded-xl text-black p-2 hover:cursor-pointer hover:bg-transparent cursor-pointer transition delay-150 duration-100 ease-in-out hover:translate-y-1 hover:scale-110">
+            Syllabus
+          </Link>
 
-          <Link className="hover:underline"> Notes </Link>
-          <Link className="hover:underline"> PYQ'S</Link>
-          <Link className="hover:underline"> Lab</Link>
-          <Link className="hover:underline"> Books </Link>
-          <Link className="hover:underline"> Akash</Link>
+          <Link className="hover:underline bg-gradient-to-bl from-violet-800 to-violet-400 rounded-xl text-black p-2 hover:cursor-pointer hover:bg-transparent cursor-pointer transition delay-150 duration-100 ease-in-out hover:translate-y-1 hover:scale-110">
+            Notes
+          </Link>
+          <Link className="hover:underline bg-gradient-to-bl from-violet-800 to-violet-400 rounded-xl text-black p-2 hover:cursor-pointer hover:bg-transparent cursor-pointer transition delay-150 duration-100 ease-in-out hover:translate-y-1 hover:scale-110">
+            PYQ'S
+          </Link>
+          <Link className="hover:underline bg-gradient-to-bl from-violet-800 to-violet-400 rounded-xl text-black p-2 hover:cursor-pointer hover:bg-transparent cursor-pointer transition delay-150 duration-100 ease-in-out hover:translate-y-1 hover:scale-110">
+            Lab
+          </Link>
+          <Link className="hover:underline bg-gradient-to-bl from-violet-800 to-violet-400 rounded-xl text-black p-2 hover:cursor-pointer hover:bg-transparent cursor-pointer transition delay-150 duration-100 ease-in-out hover:translate-y-1 hover:scale-110">
+            Books
+          </Link>
+          <Link className="hover:underline bg-gradient-to-bl from-violet-800 to-violet-400 rounded-xl text-black p-2 hover:cursor-pointer hover:bg-transparent cursor-pointer transition delay-150 duration-100 ease-in-out hover:translate-y-1 hover:scale-110">
+            Akash
+          </Link>
 
-          <Link className="hover:underline"> Videos</Link>
+          <Link className="hover:underline bg-gradient-to-bl from-violet-800 to-violet-400 rounded-xl text-black p-2 hover:cursor-pointer hover:bg-transparent cursor-pointer transition delay-150 duration-100 ease-in-out hover:translate-y-1 hover:scale-110">
+            Videos
+          </Link>
         </div>
       </div>
     </div>

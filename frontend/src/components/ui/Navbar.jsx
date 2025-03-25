@@ -29,15 +29,6 @@ export function Navbar() {
               About Us
             </Link>
           </li>
-          <li>
-            <Link
-              href="#"
-              className="text-white text-2xl hover:bg-transparent cursor-pointer transition delay-150 duration-100 ease-in-out hover:translate-y-1 hover:scale-110"
-              to="/contact"
-            >
-              Contact Us
-            </Link>
-          </li>
         </ul>
       </div>
     </nav>
