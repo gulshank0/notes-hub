@@ -10,7 +10,7 @@ function TeamPage() {
           <div className=" bg-gradient-to-br from-blue-500 to-red-500 rounded-4xl py-30 px-30 flex flex-col hover:bg-transparent transition delay-150 duration-100 ease-in-out hover:translate-y-1 hover:scale-110 ">
             <div className=" rounded-full flex justify-center pb-5 ">
               <img
-                src="../../public/CuteCat.png"
+                src="../../CuteCat.png"
                 alt="Description"
                 className="w-40 h-40 object-cover rounded-full shadow-amber-200 hover:cursor-pointer"
               />
