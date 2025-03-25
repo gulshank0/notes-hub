@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Dropdown } from "../components/ui/Dropdown";
 import { Navbar } from "../components/ui/Navbar";
+import { Footer } from "../components/ui/Footer";
 export function LandingPage() {
   return (
     <>
@@ -39,6 +40,9 @@ export function LandingPage() {
         >
           Get Started
         </Link>
+
+
+        <Footer/>
       </div>
     </>
   );
