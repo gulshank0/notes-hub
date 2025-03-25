@@ -1,14 +1,37 @@
-import React, { useState } from "react";
-import { Linkedin, Twitter, ArrowLeft, ArrowRight, Github } from "lucide-react";
+import { GithubIcon, LinkedinIcon, Twitter } from "lucide-react";
 import { Navbar } from "../components/ui/Navbar";
 
 function TeamPage() {
   return (
     <>
-      <Navbar className="bg-amber-100" />
-      <div className="min-h-screen bg-gradient-to-r from-blue-500 to-purple-500 py-8 px-4 text-center flex justify-center items-center">
-        <div className="relative flex items-center justify-center mt-6">
-          <div className="bg-amber-200 m-8 p-25 rounded-full">hi there</div>
+      <Navbar />
+      <div className="min-h-screen bg-black ">
+        <div className="pt-30 flex justify-center">
+          <div className=" bg-gradient-to-br from-blue-500 to-purple-500 rounded-4xl py-30 px-30 flex flex-col hover:bg-transparent cursor-pointer transition delay-150 duration-100 ease-in-out hover:translate-y-1 hover:scale-110 ">
+            <div className=" rounded-full flex justify-center pb-5 ">
+              <img
+                src="../../public/CuteCat.png"
+                alt="Description"
+                className="w-40 h-40 object-cover rounded-full"
+              />
+            </div>
+            <p className="text-3xl text-center">Linux Guy</p>
+            <p>
+              {" "}
+              Full Stack Developer <br /> Using Arch btw
+            </p>
+            <div className="flex flex-col gap-2">
+              <a>
+                <Twitter />
+              </a>
+              <a>
+                <GithubIcon />
+              </a>
+              <a>
+                <LinkedinIcon />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </>
