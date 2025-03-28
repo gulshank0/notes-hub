@@ -7,7 +7,7 @@ export function LandingPage() {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col items-center justify-center min-h-screen bg-black text-white pt-50 ">
+      <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-500 to-pink-500 text-white pt-50 ">
         <p className="text-5xl">Welcome to Notes Hub!</p>
 
         <Dropdown
@@ -38,8 +38,9 @@ export function LandingPage() {
         >
           Get Started
         </Link>
-
-        <Footer />
+        <div className="mt-60">
+          <Footer />
+        </div>
       </div>
     </>
   );

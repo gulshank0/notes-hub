@@ -12,7 +12,7 @@ function TeamPage() {
               <img
                 src="../../CuteCat.png"
                 alt="Description"
-                className="w-40 h-40 object-cover rounded-full shadow-amber-200 hover:cursor-pointer"
+                className="w-45 h-45 object-cover rounded-full shadow-amber-200 hover:cursor-pointer"
               />
             </div>
             <p className="text-3xl text-center">Linux Guy</p>

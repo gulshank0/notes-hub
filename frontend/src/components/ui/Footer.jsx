@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <footer className="bg-black text-white py-6 pt-80">
+    <footer className="bg-black text-white py-6">
       <div className="container mx-auto flex flex-col md:flex-row space-x-8  items-center">
         <p className="text-xl text-gray-400">
           © {new Date().getFullYear()} Notes Hub. All rights reserved.
