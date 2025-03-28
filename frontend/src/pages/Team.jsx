@@ -15,8 +15,8 @@ function TeamPage() {
                 className="w-45 h-45 object-cover rounded-full shadow-amber-200 hover:cursor-pointer"
               />
             </div>
-            <p className="text-3xl font-bold text-center">Linux Guy</p>
-            <p className="text-center">
+            <p className="text-4xl font-bold text-center">Linux Guy</p>
+            <p className="text-center text-xl">
               Full Stack Developer <br /> Using Arch btw
             </p>
             <div className="flex space-x-4 pt-3 justify-center">

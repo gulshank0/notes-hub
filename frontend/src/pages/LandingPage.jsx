@@ -34,7 +34,7 @@ export function LandingPage() {
 
         <Link
           to="/branchIT"
-          className=" bg-gradient-to-br from-slate-950 to-blue-500 text-2xl text-black px-9 py-4 rounded-2xl mt-4  hover:bg-transparent cursor-pointer transition delay-150 duration-100 ease-in-out hover:translate-y-1 hover:scale-110 "
+          className=" bg-gradient-to-br from-slate-950 to-blue-500 text-2xl text-gray-100 px-9 py-4 rounded-2xl mt-6  hover:bg-transparent cursor-pointer transition delay-150 duration-100 ease-in-out hover:translate-y-1 hover:scale-110 "
         >
           Get Started
         </Link>
