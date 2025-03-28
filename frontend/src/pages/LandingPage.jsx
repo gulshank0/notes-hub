@@ -7,7 +7,7 @@ export function LandingPage() {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-500 to-pink-500 text-white pt-50 ">
+      <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-gray-500 to-slate-950 text-white pt-50 ">
         <p className="text-5xl">Welcome to Notes Hub!</p>
 
         <Dropdown
@@ -34,7 +34,7 @@ export function LandingPage() {
 
         <Link
           to="/branchIT"
-          className=" bg-gradient-to-br from-blue-500 to-purple-500 px-9 py-4 rounded-2xl mt-4  hover:bg-transparent cursor-pointer transition delay-150 duration-100 ease-in-out hover:translate-y-1 hover:scale-110 "
+          className=" bg-gradient-to-br from-slate-950 to-blue-500 text-2xl text-black px-9 py-4 rounded-2xl mt-4  hover:bg-transparent cursor-pointer transition delay-150 duration-100 ease-in-out hover:translate-y-1 hover:scale-110 "
         >
           Get Started
         </Link>
