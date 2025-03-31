@@ -17,6 +17,7 @@ function App() {
         <Route path="/branchIT/:contents" element={<Contents />} />
         <Route path="/about" element={<Team />} />
         <Route path="/syllabus" element={<Syllabus />} />
+        <Route path="/signup" element={<Syllabus />} />
       </Routes>
     </Router>
   );
