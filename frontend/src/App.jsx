@@ -6,6 +6,7 @@ import BranchIT from "./pages/Branch_it.jsx";
 import Mechanical from "./pages/Mechanical.jsx";
 import Team from "./pages/Team.jsx";
 import Syllabus from "./pages/Syllabus.jsx";
+import { Signup } from "./pages/Signup.jsx";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Route path="/branchIT/:contents" element={<Contents />} />
         <Route path="/about" element={<Team />} />
         <Route path="/syllabus" element={<Syllabus />} />
-        <Route path="/signup" element={<Syllabus />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </Router>
   );
