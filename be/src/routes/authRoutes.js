@@ -1,7 +1,7 @@
 import express from "express";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
-import prisma from "../prismaClient";
+import prisma from "../prismaClient.js";
 
 const router = express.Router();
 //
@@ -41,16 +41,16 @@ router.post("/login", async (req, res) => {
     });
     //if user not found
     if (!user) {
-      return res.sendStatus(404).send({ message: "User not found" });
+      return res.status(404).json({ message: "User not found" });
     }
     const passwordIsValid = bcrypt.compareSync(password, user.password);
     //if user password was Wrong
     if (!passwordIsValid) {
-      return res.status(401).send({ message: "Invalid Password" });
+      return res.status(401).json({ message: "Invalid Password" });
     }
     console.log(user);
     //then we have successful authentication
-    const token = jwt.sign(user, process.env.JWT_SECRET, { expiresIn: "24h" });
+    const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, { expiresIn: "24h" });
     res.json({ token });
   } catch (err) {
     console.log(err.message);

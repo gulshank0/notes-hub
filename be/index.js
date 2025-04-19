@@ -1,13 +1,26 @@
 import express from "express";
-import authMiddlware from "./src/middleware/authMiddlwares.js";
+import authMiddleware from "./src/middleware/authMiddlwares.js";
+import authRoutes from "./src/routes/authRoutes.js";
+import dotenv from "dotenv";
+
+// Load environment variables
+dotenv.config();
+
 const app = express();
 const PORT = process.env.PORT || 3000;
-//middlware to use
-//
-app.use(express.json());
-// authentication routes middlware
-app.use("/auth", authMiddlware);
 
+// Middlewares
+app.use(express.json());
+
+// Authentication routes (unprotected)
+app.use("/auth", authRoutes);
+
+// Protected routes example
+app.get("/protected", authMiddleware, (req, res) => {
+  res.json({ message: "This is a protected route", userId: req.userId });
+});
+
+// Start server
 app.listen(PORT, () => {
-  console.log(`listening on port ${PORT} `);
+  console.log(`Server listening on port ${PORT}`);
 });
