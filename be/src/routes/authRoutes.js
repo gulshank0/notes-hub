@@ -39,11 +39,19 @@ router.post("/login", async (req, res) => {
     //if user not found
     if (!user) {
       return res.sendStatus(404).send({ message: "User not found" });
-      //checking password
-      const 
     }
+    const passwordIsValid = bcrypt.compareSync(password, user.password);
+    //if user password was Wrong
+    if (!passwordIsValid) {
+      return res.status(401).send({ message: "Invalid Password" });
+    }
+    console.log(user);
+    //then we have successful authentication
+    const token = jwt.sign(user, process.env.JWT_SECRET, { expiresIn: "24h" });
+    res.json({ token });
   } catch (err) {
     console.log(err.message);
     res.sendStatus(503);
   }
 });
+export default router;
