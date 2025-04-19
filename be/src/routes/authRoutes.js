@@ -10,7 +10,7 @@ router.post("/register", async (req, res) => {
   const { username, password } = req.body;
   // password encrypted
   const hashedPassword = bcrypt.hashSync(password, 8);
-  //
+  // save the new user with hashed password to the db
   try {
     const user = await prisma.user.create({
       data: {
@@ -19,8 +19,11 @@ router.post("/register", async (req, res) => {
       },
     });
     // create a token
-    const token = jwt.sign(user, process.env.JWT_SECRET, { expiresIn: "24h" });
+    const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, {
+      expiresIn: "24h",
+    });
     res.json({ token });
+    console.log(token);
     //
   } catch (err) {
     console.log(err.message);
