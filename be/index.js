@@ -1,17 +1,13 @@
-const express=require("express");
+import express from "express";
+import authMiddleware from "./src/middleware/authMiddlwares";
 const app = express();
+const PORT = process.env.PORT || 3000;
+//middlware to use
+//
+app.use(express.json());
+// authentication routes middlware
+app.use("/auth", authMiddleware);
 
-
-app.get("/",function(req,res){
-    res.send("hello world");
-})
-app.post("/",(req,res)=>{
-    res.send("this time post request got invoke");
-} )
-
-
-
-
-app.listen(3000,()=>{
-    console.log("listening on port 3000"+"port is listening")
-})
+app.listen(PORT, () => {
+  console.log(`listening on port ${PORT} `);
+});

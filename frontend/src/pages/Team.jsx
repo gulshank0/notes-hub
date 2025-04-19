@@ -4,13 +4,14 @@ import { Navbar } from "../components/ui/Navbar";
 function TeamPage() {
   return (
     <>
-      <Navbar />
-      <div className="min-h-screen bg-black ">
+      <div className="min-h-screen bg-[url(../../arch.gif)] ">
+              <Navbar />
+
         <div className="pt-30 flex justify-center">
           <div className=" bg-gradient-to-br from-blue-500 to-red-500 rounded-4xl py-30 px-30 flex flex-col hover:bg-transparent transition delay-150 duration-100 ease-in-out hover:translate-y-1 hover:scale-110 ">
             <div className=" rounded-full flex justify-center pb-5 ">
               <img
-                src="../../CuteCat.png"
+                src="../../arch.gif"
                 alt="Description"
                 className="w-45 h-45 object-cover rounded-full shadow-amber-200 hover:cursor-pointer"
               />
