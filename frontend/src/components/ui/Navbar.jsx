@@ -35,7 +35,7 @@ export function Navbar() {
               className="text-white bg-gradient-to-br from-blue-500 to-slate-900 rounded-xl p-2 text-center text-2xl hover:bg-transparent cursor-pointer transition delay-150 duration-100 ease-in-out hover:translate-y-1 hover:scale-110"
               to="/signup"
             >
-              SignUp / Login
+              SignUp
             </Link>
           </li>
         </ul>
