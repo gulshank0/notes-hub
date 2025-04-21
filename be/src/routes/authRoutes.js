@@ -1,8 +1,6 @@
 import express from "express";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
-import prisma from "../prismaClient.js";
-
 const router = express.Router();
 //
 //// Register new User End point
@@ -50,7 +48,9 @@ router.post("/login", async (req, res) => {
     }
     console.log(user);
     //then we have successful authentication
-    const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, { expiresIn: "24h" });
+    const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, {
+      expiresIn: "24h",
+    });
     res.json({ token });
   } catch (err) {
     console.log(err.message);
