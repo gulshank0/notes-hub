@@ -33,18 +33,19 @@ app.post("/register", async (req, res) => {
 app.post("/login", async (req, res) => {
   const { email, password } = req.body;
   try {
-    const getUser = await client.query("SELECT * FROM users WHERE email=$1", [
+    const getUser = await client.query(`SELECT * FROM users WHERE email=$1`, [
       email,
     ]);
     // declaring  variable user
     const user = [email];
+    console.log(user);
     if (getUser.rows.length === 0) {
-      res.status(404).send({ message: "User not found" });
+      res.status(404).send({ message: "User not Found " });
       return;
     }
-    if (!user) {
-      return res.send(404).send({ message: "User not exist" });
-    }
+    // if (!user) {
+    //   return res.send(404).send({ message: "User not exist" });
+    // }
     const passwordIsValid = bcrypt.compareSync(
       password,
       getUser.rows[0].password,
