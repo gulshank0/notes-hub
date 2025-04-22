@@ -36,26 +36,31 @@ app.post("/login", async (req, res) => {
     const getUser = await client.query("SELECT * FROM users WHERE email=$1", [
       email,
     ]);
-    
+    // declaring  variable user
+    const user = [email];
     if (getUser.rows.length === 0) {
       res.status(404).send({ message: "User not found" });
       return;
     }
-    
-    const passwordIsValid = bcrypt.compareSync(password, getUser.rows[0].password);
+    if (!user) {
+      return res.send(404).send({ message: "User not exist" });
+    }
+    const passwordIsValid = bcrypt.compareSync(
+      password,
+      getUser.rows[0].password,
+    );
     if (!passwordIsValid) {
       res.status(401).send({ message: "Invalid Password" });
       return;
     }
-    
+
     console.log(`User logged in: ${email}`);
     res.status(200).send({ message: "Login successful" });
   } catch (err: any) {
     console.log(err.message);
     res.status(500).send({ message: "Server error" });
   }
-});  
-  
+});
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
