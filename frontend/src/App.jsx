@@ -7,18 +7,20 @@ import Mechanical from "./pages/Mechanical.jsx";
 import Team from "./pages/Team.jsx";
 import Syllabus from "./pages/Syllabus.jsx";
 import { Signup } from "./pages/Signup.jsx";
+import { Signin } from "./pages/Signin.jsx";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        <Route path="/login" element={<LandingPage />} />
         <Route path="/branchIT" element={<BranchIT />} />
         <Route path="/Mechanical" element={<Mechanical />} />
         <Route path="/branchIT/:contents" element={<Contents />} />
         <Route path="/about" element={<Team />} />
         <Route path="/syllabus" element={<Syllabus />} />
-        <Route path="/signup" element={<Signup />} />
+        <Route path="/" element={<Signup />} />
+        <Route path="/auth" element={<Signin />} />
       </Routes>
     </Router>
   );
