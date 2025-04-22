@@ -1,33 +1,37 @@
 import express, { Request, Response } from "express";
 import client from "./db";
-import bcrypt from "bcrypt";
-import jwt from "jsonwebtoken";
-import dotenv from "dotenv";
-dotenv.config();
-const app = express();
+import bcrypt from "bcryptjs";
+//import jwt from "jsonwebtoken";
+//import dotenv from "dotenv";
 const port = 3000;
+//started the app
+const app = express();
+//middleware added
 app.use(express.json());
-app.post("/register",async (req: Request, res: Response) => {
+//routes added here to go to ==> /register routes
+app.post("/register", async (req: Request, res: Response) => {
   const { email, password } = req.body;
   const hashedPassword = bcrypt.hashSync(password, 8);
-  try{
-const result = await client.query(
-  'INSERT INTO users(email,password) VALUES($1,$2) RETURNING id',
-  [email, hashedPassword]
-);
-  if (!process.env.JWT_SECRET) {
-    throw new Error('JWT_SECRET is not defined');
+  try {
+    // query to inser the data
+    const insertQuery = client.query(
+      "INSERT INTO users ( email, password) VALUES ($1, $2) RETURNING* ",
+      [email, hashedPassword],
+    );
+    insertQuery;
+    // here we manuallu entry the data
+    // const email = "hithere@gmail.com";
+    //const password = "54321";
+    const values = [email, hashedPassword];
+    // console.log(values);
+    // const res = await client.query(insertQuery, values);
+    console.log("Register success:");
+    res.send({ values });
+  } catch (err: any) {
+    console.log(err.message);
+    res.sendStatus(503);
   }
-  const token=jwt.sign(
-    {id:result.rows[0].id}, process.env.JWT_SECRET, {expiresIn:'24h'});
-  res.json({ token }); 
-} catch(err:any) {
-  console.log(err.message);
-  res.sendStatus(503);
-}
 });
-
-
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
