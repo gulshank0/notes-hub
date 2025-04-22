@@ -37,8 +37,8 @@ app.post("/login", async (req, res) => {
       email,
     ]);
     // declaring  variable user
-    const user = [email];
-    console.log(user);
+    //const user = [email];
+    //console.log(user);
     if (getUser.rows.length === 0) {
       res.status(404).send({ message: "User not Found " });
       return;
