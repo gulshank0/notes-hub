@@ -18,18 +18,22 @@ app.post("/register", async (req: Request, res: Response) => {
       "INSERT INTO users ( email, password) VALUES ($1, $2) RETURNING* ",
       [email, hashedPassword],
     );
-    insertQuery;
-    // here we manuallu entry the data
-    // const email = "hithere@gmail.com";
-    //const password = "54321";
+    // ==>calling this    insertQuery;
+
     const values = [email, hashedPassword];
-    // console.log(values);
-    // const res = await client.query(insertQuery, values);
     console.log("Register success:");
     res.send({ values });
   } catch (err: any) {
     console.log(err.message);
     res.sendStatus(503);
+  }
+});
+app.post("/login", async (req: Request, res: Response) => {
+  const { email, password } = req.body;
+  try {
+    const getUser = client.query("SELECT * FROM users WHERE email=?");
+  } catch (err: any) {
+    console.log(err.message);
   }
 });
 
