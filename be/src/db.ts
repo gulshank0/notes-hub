@@ -1,4 +1,5 @@
 import { Client } from "pg";
+//import dotenv from "dotenv";
 const client = new Client({
   connectionString: "postgresql://postgres:mysecretpassword@localhost/postgres",
 });
@@ -6,12 +7,12 @@ const client = new Client({
 async function initDb() {
   try {
     await client.connect();
-    
+
     // Check if table exists before creating
     const tableExists = await client.query(
-      "SELECT EXISTS (SELECT FROM information_schema.tables WHERE table_name = 'users')"
+      "SELECT EXISTS (SELECT FROM information_schema.tables WHERE table_name = 'users')",
     );
-    
+
     if (!tableExists.rows[0].exists) {
       await client.query(`
         CREATE TABLE users (
