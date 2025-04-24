@@ -41,7 +41,7 @@ export function Signup() {
 
   return (
     <>
-      <div className="h-screen bg-[url(../../Linux-user-Room.png)]">
+      <div className=" min-h-screen bg-[url(../../Linux-user-Room.png)]">
         <div className="h-screen flex justify-center items-center  from-red-600 to-blue-500">
           <div className="bg-gradient-to-b from-gray-800 to-blue-500 h-150 w-120 rounded-2xl flex justify-center items-center">
             <div className="grid gap-30">
