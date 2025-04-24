@@ -1,4 +1,5 @@
 import { Card } from "../components/ui/Card";
+import { Footer } from "../components/ui/Footer";
 import { Navbar } from "../components/ui/Navbar";
 function BranchIT() {
   return (
@@ -15,6 +16,9 @@ function BranchIT() {
             <Card title="Web Devs" link="http://google.com" />
             <Card title="computer Netwoks" />
           </div>
+        </div>
+        <div className="flex justify-center">
+          <Footer />
         </div>
       </div>
     </>
