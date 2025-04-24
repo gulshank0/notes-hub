@@ -56,7 +56,7 @@ function Contents(subjects) {
           </Link>
         </div>
       </div>
-      <div className="flex justify-center pt-120 ">
+      <div className="flex justify-center pt-110 ">
         <Footer />
       </div>
     </div>
