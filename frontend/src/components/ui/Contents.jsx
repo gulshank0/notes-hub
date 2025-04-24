@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Navbar } from "./Navbar";
-
+import { Footer } from "./Footer";
 function Contents(subjects) {
   const units = [
     {
@@ -20,7 +20,7 @@ function Contents(subjects) {
   };
 
   return (
-    <div className="h-screen min-h-screen bg-[url(../../arch.gif)]">
+    <div className="h-screen bg-[url(../../arch.gif)]">
       <Navbar />
 
       <div className=" flex flex-col items-center pt-40 ">
@@ -55,6 +55,9 @@ function Contents(subjects) {
             Videos
           </Link>
         </div>
+      </div>
+      <div className="flex justify-center pt-120 ">
+        <Footer />
       </div>
     </div>
   );
