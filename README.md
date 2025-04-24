@@ -31,7 +31,7 @@ This project is a web-based application that allows users to upload, store, and 
 ### Set up environment variables:
 Create a `.env` file in the root directory and add:
 ```sh
- DATABASE_URL=your_mongodb_connection_string
+ DATABASE_URL=your_postgresql_connection_string
 ```
 
 ### Run the development server:
