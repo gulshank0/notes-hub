@@ -13,7 +13,7 @@ This project is a web-based application that allows users to upload, store, and 
 ## 🛠️ Tech Stack
 - **Frontend:** React.js,Tailwind CSS,Vite
 - **Backend:** Node.js, Express.js
-- **Database:** MongoDB
+- **Database:** postgresql
 
 ## 📥 Installation
 
@@ -31,12 +31,12 @@ This project is a web-based application that allows users to upload, store, and 
 ### Set up environment variables:
 Create a `.env` file in the root directory and add:
 ```sh
- MONGO_URI=your_mongodb_connection_string
+ DATABASE_URL=your_mongodb_connection_string
 ```
 
 ### Run the development server:
 ```sh
- npm run dev  # or yarn dev
+ npm run dev  
 ```
 
 ## 📌 Future Enhancements
