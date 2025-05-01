@@ -25,18 +25,31 @@ This project is a web-based application that allows users to upload, store, and 
 
 ### Install dependencies:
 ```sh
+cd frontend
+```
+```sh
  npm install  
 ```
-
+### now go to backend 
+```sh
+cd backend
+```
+```sh
+npm install
+```
 ### Set up environment variables:
 Create a `.env` file in the root directory and add:
 ```sh
  DATABASE_URL=your_postgresql_connection_string
 ```
 
-### Run the development server:
+### Run the development backend:
 ```sh
  npm run dev  
+```
+### Now run frontend : 
+```sh
+npm run dev
 ```
 
 ## 📌 Future Enhancements
