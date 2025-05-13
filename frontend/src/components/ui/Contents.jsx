@@ -27,7 +27,7 @@ function Contents(subjects) {
         <p className="text-4xl text-white pb-6 font-extrabold ">
           Welcome to WEB DEV PAGE{" "}
         </p>
-        <div className="text-3xl text-pretty text-white text-center bg-gradient-to-br from-red-400 to-violet-700 px-20 p-6 rounded-2xl grid grid-cols-3 sm:grid-cols-7 gap-10 ">
+        <div className="text-3xl text-pretty text-white text-center bg-transparent px-20 p-6 rounded-2xl grid grid-cols-3 sm:grid-cols-7 gap-10 ">
           <Link
             className="hover:underline bg-gradient-to-bl from-violet-800 to-violet-400 rounded-xl text-black p-2 hover:cursor-pointer hover:bg-transparent cursor-pointer transition delay-150 duration-100 ease-in-out hover:translate-y-1 hover:scale-110"
             to="/syllabus"
